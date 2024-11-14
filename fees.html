@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Payment page</title>
+        <style>
+            label
+            {
+               display:block;
+               margin-bottom: 10px;
+               font-weight: bolder;
+               font-size: large;
+               color:white;
+            }
+            input
+            {
+                display: block;
+                margin-bottom: 10px;
+                width: 100%;
+                padding:10px;
+                font-size:large;
+                border-radius: 20px;
+            }
+            button
+            {
+              background-color:rgb(3, 92, 19);
+              border:none;
+              border-radius: 5px;
+              cursor:pointer;
+              color:white;
+              padding: 5px;
+            }
+            button:hover
+            {
+                background-color:rgb(1, 78, 46);
+                color:white;
+                padding: 10px;
+                width: 10%;
+
+            }
+            form
+            {
+              border:2px solid gray ;
+              border-radius: 25px;
+              padding: 20px;
+              width:50%;
+              margin-left: 25%;
+              margin-top: 2%;
+              border-style: solid;
+            }
+            header
+            {
+                border-radius: 20px;
+                color:rgb(76,26,32);
+                text-align: center;
+                padding:0.1px;
+                font-weight: bold;
+            }
+            h2
+            {
+              font-size: 50px;
+            }
+            title
+            {
+              border-radius: 50px;
+            }
+            body
+            {
+              background-image: url('col.jpg');
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>
+                Payment Page
+            </h2>
+        </header>
+        <form method="post" action="./portallinking">
+            <label>Enter Year</label>
+            <input type="text" id="year" name="year"  placeholder="Enter Year Of Study">
+            <label>Enter EAMCET Rank</label>
+            <input type="text" id="rank"  name="rank"  placeholder="Enter Eamcet Rank">
+            <button type="submit" >Proceed to payment</button> 
+        </form>    
+    </body>
+</html>
+

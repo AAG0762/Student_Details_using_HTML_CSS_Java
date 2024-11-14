@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Bus Details page</title>
+        <style>
+            label
+            {
+               display:block;
+               margin-bottom: 10px;
+               font-weight: bolder;
+               font-size: large;
+               color:white;
+            }
+            input
+            {
+                color: none;
+                display: block;
+                margin-bottom: 10px;
+                width: 100%;
+                padding:10px;
+                font-size:large;
+                border-radius: 20px;
+            }
+            button
+            {
+              background-color:rgb(3, 92, 19);
+              border:none;
+              border-radius: 5px;
+              cursor:pointer;
+              color:white;
+              padding: 5px;
+            }
+            button:hover
+            {
+                background-color:rgb(1, 78, 46);
+                color:white;
+                padding: 10px;
+                width: 10%;
+
+            }
+            form
+            {
+              border:2px solid gray ;
+              border-radius: 25px;
+              padding: 20px;
+              width:50%;
+              margin-left: 25%;
+              margin-top: 2%;
+              border-style: solid;
+            }
+            header
+            {
+                border-radius: 20px;
+                color:rgb(76,26,32);
+                text-align: center;
+                padding:0.1px;
+                font-weight: bold;
+            }
+            h2
+            {
+              font-size: 50px;
+            }
+            title
+            {
+              border-radius: 50px;
+            }
+            body
+            {
+              background-image: url('col.jpg');
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>
+                Details Page
+            </h2>
+        </header>
+        <form method="post" action="./fifthlinking">
+            <label>Student HTNO</label>
+            <input type="text" id="hto" name="hto"  placeholder="Enter HTNO">
+            <label>Student Bus Route Number</label>
+            <input type="text" id="brn" name="brn"  placeholder="Enter Bus Route Number">
+            <label>Enter Pickup And Drop Point</label>
+            <input type="text" id="pdp" name="pdp"  placeholder="Enter Pickup And Drop Points">
+            <label>Enter Fees to be paid</label>
+            <input type="text" id="bfs" name="bfs"  placeholder="Enter Fees To Be Paid">
+            <button type="submit" >Submit</button> 
+        </form>    
+    </body>
+</html>
